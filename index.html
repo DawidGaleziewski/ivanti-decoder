@@ -5,35 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main>
-        <h1>Decode your thumbprint</h1>
-        <form id="decode-form" class= "decode__form" action="" method="GET">
-            <input id= "decode-input" type="text" class= "decode__form__input">
-            <input type="button" class= "decode__form__button" value="Decode" id="btn-decode">
+    <main class="main">
+        <h1 class="main__header">Decode your thumbprint</h1>
+        <form id="decode-form" class="main__form" action="" method="GET">
+            <input id= "decode-input" type="text" class= "form__input">
+            <input type="button" class= "form__input-btn" value="Decode" id="btn-decode">
         </form>
-        <span id="resault"></span>
-
-        <h2>Where to find this "thumbprint"?</h2>
-        <p>On core server go to mmc</p>
-        <p>Add/remove snapin</p>
-        <p>Certificates</p>
-        <p>Add</p>
-        <p>Computer - local accounts</p>
-        <p>In the certificates click on certificate that is named as current server</p>
-        <p>Double click on it and go to details</p>
-        <p>Click on thumbprint, you can copy it from here</p>
-        <img src="./thumbprint.JPG" alt="">
-
-        <h2>What to do with it</h2>
-        <p>Check if your IIS thumbprints in web.configs for sites are correct</p>
-        <p>for example is the value returned is the same as the one inside:
-                C:\Program Files\LANDESK\Identity Server for STScert value
-        </p>
-        <img src="./webconfig.JPG" alt="">
-     
+        <span id="resault" class="main-decode-resault"></span>
     </main>
-    <script src="main.js"></script>
+    <section class="description">
+        <hr>
+        <h2>Where to find this "thumbprint"?</h2>
+        <img class="description__img" src="img/thumbprint.JPG" alt="">
+        <ul class="description__list">
+            <li class="list__step">
+                On core server go to mmc
+            </li>
+            <li class="list__step">
+                    Add/remove snapin
+            </li>
+            <li class="list__step">
+                    Certificates
+            </li>
+            <li class="list__step">
+                    Add
+            </li>
+            <li class="list__step">
+                    Computer - local accounts
+            </li>
+            <li class="list__step">
+                In the certificates click on certificate that is named as current server
+            </li>
+            <li class="list__step">
+                    Double click on it and go to details
+            </li>
+            <li class="list__step">
+                    Click on thumbprint, you can copy it from here
+            </li>
+        </ul>
+
+        <hr>
+        <h2>What to do with it?</h2>
+        <img src="img/webconfig.JPG" alt="">
+        <ul class="description__list">
+            <li class="list__step">
+                Check if your IIS thumbprints in web.configs for sites are correct
+            </li>
+            <li class="list__step">
+                for example is the value returned is the same as the one inside: C:\Program Files\LANDESK\Identity Server for STScert value
+            </li>
+            <li class="list__step">
+                    Certificates
+            </li>
+        </ul>
+        
+    </section>
+    <script src="js/main.js"></script>
 </body>
 </html>
