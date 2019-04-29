@@ -6,21 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
 </head>
 <body>
     <main class="main">
         <h1 class="main__header">Decode your thumbprint</h1>
         <form id="decode-form" class="main__form" action="" method="GET">
-            <input id= "decode-input" type="text" class= "form__input">
+            <input id= "decode-input" type="text" class= "form__input" placeholder="core server certificate thumbprint">
             <input type="button" class= "form__input-btn" value="Decode" id="btn-decode">
         </form>
-        <span id="resault" class="main-decode-resault"></span>
+        <div id="resault" class="main-decode-resault">Decoded thumbprint will be displayed here</div>
     </main>
     <section class="description">
         <hr>
-        <h2>Where to find this "thumbprint"?</h2>
+        <h2 class="description__header">Where to find this "thumbprint"?</h2>
         <img class="description__img" src="img/thumbprint.JPG" alt="">
-        <ul class="description__list">
+        <ol class="description__list">
             <li class="list__step">
                 On core server go to mmc
             </li>
@@ -45,12 +46,12 @@
             <li class="list__step">
                     Click on thumbprint, you can copy it from here
             </li>
-        </ul>
+        </ol>
 
         <hr>
-        <h2>What to do with it?</h2>
+        <h2 class="description__header">What to do with it?</h2>
         <img src="img/webconfig.JPG" alt="">
-        <ul class="description__list">
+        <ol class="description__list">
             <li class="list__step">
                 Check if your IIS thumbprints in web.configs for sites are correct
             </li>
@@ -60,7 +61,7 @@
             <li class="list__step">
                     Certificates
             </li>
-        </ul>
+        </ol>
         
     </section>
     <script src="js/main.js"></script>

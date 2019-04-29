@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.main,
+.description {
+    margin: 4rem 8rem;
+}
+
+.description__header {
+    margin: 4rem 0;
+}
+
+.form__input {
+    padding: 1rem;
+    width: 30rem;
+    max-width: 50vw;
+}
+
+.form__input-btn {
+    padding: 1rem;
+}
+
+.main-decode-resault {
+    margin-top: 2rem;
+    display: inline-block;
+    border: 1px solid crimson;
+    padding: 1rem;
+
+}
