@@ -23,6 +23,9 @@ body {
 
 .form__input-btn {
     padding: 1rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    margin-left: 0.5rem;
 }
 
 .main-decode-resault {
@@ -31,4 +34,13 @@ body {
     border: 1px solid crimson;
     padding: 1rem;
 
+}
+
+.list__step {
+    margin: 1rem 0;
+}
+
+.description__img{
+    margin: 2rem 0;
+    border: 1px solid crimson;
 }
