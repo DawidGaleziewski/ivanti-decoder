@@ -36,6 +36,10 @@ body {
 
 }
 
+.description__line {
+    margin: 4rem 0;
+}
+
 .list__step {
     margin: 1rem 0;
 }
